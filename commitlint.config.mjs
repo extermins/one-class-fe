@@ -1,4 +1,4 @@
-// 커밋 컨벤션은 CLAUDE.md 참고
+// 커밋 컨벤션은 AGENTS.md 참고
 const commitlintConfig = {
   extends: ['@commitlint/config-conventional'],
   rules: {
