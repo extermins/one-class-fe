@@ -1,0 +1,39 @@
+name: '🔧 chore'
+description: '설정, 패키지 등 기타 작업을 합니다'
+title: '[fe][chore] '
+labels: ['chore']
+body:
+  - type: input
+    id: ticket
+    attributes:
+      label: '🎫 유저스토리 티켓'
+      description: '관련 유저스토리 티켓번호가 있다면 작성해 주세요.'
+      placeholder: '예) uss-12'
+    validations:
+      required: false
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: '📄 작업 내용'
+      description: '무엇을, 왜 작업하는지 작성해 주세요.'
+      placeholder: '최대한 세분화해서 적어주세요!'
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: '✅ 완료 조건'
+      description: '작업이 끝났다고 판단할 기준을 체크박스로 작성해 주세요.'
+      placeholder: '- [ ] '
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: '💬 참고 사항'
+      description: '참고 자료, 에러 로그, 스크린샷 등이 있다면 작성해 주세요.'
+    validations:
+      required: false
