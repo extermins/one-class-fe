@@ -1,0 +1,30 @@
+name: "♻️ Refactor"
+description: "동작 변경 없이 코드 구조/품질을 개선합니다"
+title: "[Refactor] "
+labels: ["refactor"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "📄 설명"
+      description: "리팩터링 대상과 이유에 대한 설명을 작성해 주세요."
+      placeholder: "현재 코드의 문제점과 개선 방향을 자세히 적어주세요!"
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: "✅ 작업할 내용"
+      description: "할 일을 체크박스 형태로 작성해주세요."
+      placeholder: "최대한 세분화 해서 적어주세요!"
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: "🧑‍🏫 참고 자료"
+      description: "참고 자료가 있다면 작성해 주세요."
+    validations:
+      required: false
