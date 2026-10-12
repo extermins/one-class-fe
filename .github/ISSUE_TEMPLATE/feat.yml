@@ -1,6 +1,6 @@
 name: '✨ feature'
 description: '새로운 기능 추가를 제안합니다'
-title: '[feat] '
+title: '[fe][feat] '
 labels: ['feat']
 body:
   - type: textarea

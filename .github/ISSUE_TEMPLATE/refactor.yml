@@ -1,6 +1,6 @@
 name: '♻️ refactor'
 description: '동작 변경 없이 코드 구조/품질을 개선합니다'
-title: '[refactor] '
+title: '[fe][refactor] '
 labels: ['refactor']
 body:
   - type: textarea
