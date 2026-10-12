@@ -43,6 +43,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 ### 병합·보호 규칙 (기본값)
 
 - 병합 방식: Squash and merge
+- squash 커밋 메시지는 GitHub 기본값을 그대로 사용. PR 커밋이 1개면 커밋 메시지(`feat: 제목 (#5)`), 여러 개면 PR 제목(`[feat] 설명 (#5)`)이 되므로 `main`·`dev` 이력에 두 형식이 섞이는 것을 허용
 - `main`, `dev`는 PR을 통해서만 반영
 - 병합 후 feat 브랜치 삭제
 - 리뷰 승인 인원과 CI 통과 필수 여부는 미정. 임의로 정하지 말 것
