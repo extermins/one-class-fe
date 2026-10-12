@@ -1,22 +1,22 @@
-name: "🐛 Fix"
-description: "버그 수정을 요청합니다"
-title: "[Fix] "
-labels: ["fix"]
+name: '🐛 fix'
+description: '버그 수정을 요청합니다'
+title: '[fix] '
+labels: ['fix']
 body:
   - type: textarea
     id: description
     attributes:
-      label: "📄 설명"
-      description: "발생한 버그에 대한 설명을 작성해 주세요."
-      placeholder: "어떤 문제가 발생하는지 자세히 적어주세요!"
+      label: '📄 설명'
+      description: '발생한 버그에 대한 설명을 작성해 주세요.'
+      placeholder: '어떤 문제가 발생하는지 자세히 적어주세요!'
     validations:
       required: true
 
   - type: textarea
     id: reproduce
     attributes:
-      label: "🔁 재현 방법"
-      description: "버그를 재현하는 순서를 작성해 주세요."
+      label: '🔁 재현 방법'
+      description: '버그를 재현하는 순서를 작성해 주세요.'
       placeholder: |
         1.
         2.
@@ -27,16 +27,16 @@ body:
   - type: textarea
     id: tasks
     attributes:
-      label: "✅ 작업할 내용"
-      description: "할 일을 체크박스 형태로 작성해주세요."
-      placeholder: "최대한 세분화 해서 적어주세요!"
+      label: '✅ 작업할 내용'
+      description: '할 일을 체크박스 형태로 작성해주세요.'
+      placeholder: '최대한 세분화 해서 적어주세요!'
     validations:
       required: true
 
   - type: textarea
     id: references
     attributes:
-      label: "🧑‍🏫 참고 자료"
-      description: "에러 로그, 스크린샷 등 참고 자료가 있다면 작성해 주세요."
+      label: '🧑‍🏫 참고 자료'
+      description: '에러 로그, 스크린샷 등 참고 자료가 있다면 작성해 주세요.'
     validations:
       required: false

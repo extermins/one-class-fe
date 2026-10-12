@@ -57,7 +57,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## PR 규칙
 
-- 제목: `[타입/#이슈번호] 설명` 예) `[feat/#12] 학생 캘린더 일정 조회 구현`
+- 제목: `[타입] 설명` 예) `[feat] 학생 캘린더 일정 조회 구현`
 - 대상: feat → dev (기능 작업), dev → main (배포 시점)
 - 본문에 `Closes #이슈번호`를 적어 병합 시 Issue가 자동으로 닫히게 함
 - 본문 항목: 작업 내용, 변경 사항, 확인 방법(스크린샷 포함), 참고 사항
