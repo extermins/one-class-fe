@@ -50,7 +50,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 ## Issue 규칙
 
 - 라벨: `feat`(기능), `fix`(버그), `refactor`/`chore`(리팩터링·설정·패키지), `docs`/`design`(문서·UI 스타일)
-- 제목: `[타입] 설명` 예) `[feat] 학생 캘린더 일정 조회 기능`
+- 제목: `[fe][타입] 설명` 예) `[fe][feat] 학생 캘린더 일정 조회 기능`
 - 작업 시작 전에 Issue를 먼저 발행하고 그 번호를 브랜치명과 PR에 사용
 - 유저스토리 티켓(uss, usp, ust, usa, usm) 관련 작업이면 본문에 티켓번호를 함께 적음
 - 본문 항목: 작업 내용, 완료 조건, 참고 사항
@@ -149,6 +149,7 @@ src/
 ├─ lib/                  # 외부 라이브러리 설정 (apiClient, queryClient)
 ├─ providers/            # Provider 컴포넌트 (이 폴더 한 곳에만 둠)
 ├─ utils/                # 순수 함수 (formatDate)
+├─ types/                # 도메인과 무관한 공용 타입 (라이브러리 타입 확장 등)
 └─ assets/               # 코드에서 import하는 이미지·아이콘
 ```
 
@@ -160,7 +161,8 @@ src/
 - 역할별 차이는 도메인 안에서 컴포넌트를 나눠 처리 (`GradeTable` 조회용, `GradeEditForm` 강사용)
 - 역할 대시보드 URL은 라우트 그룹이 아니라 접두사 방식 (`/student/...`)
 - `lib`은 생태계 관례에 따라 단수형을 예외로 허용
-- 공용 `types/` 폴더는 두지 않음. 타입은 각 도메인의 `features/*/types/`에 둠
+- 도메인 타입은 각 도메인의 `features/*/types/`에 둠
+- 공용 `types/`에는 도메인과 무관한 타입만 둠 (예: request 설정 확장 같은 라이브러리 타입 확장, 공통 API 응답 형식). 특정 도메인에서만 쓰는 타입은 넣지 않음
 
 ### 파일 위치
 
