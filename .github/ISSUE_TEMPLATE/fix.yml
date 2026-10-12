@@ -1,6 +1,6 @@
 name: '🐛 fix'
 description: '버그 수정을 요청합니다'
-title: '[fix] '
+title: '[fe][fix] '
 labels: ['fix']
 body:
   - type: textarea
