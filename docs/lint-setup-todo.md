@@ -84,7 +84,6 @@ npm run format
 
 ## 9. 기타 정리
 
-- `src/types/`: CLAUDE.md의 "공용 `types/` 폴더는 두지 않음" 규칙과 맞지 않으므로 삭제
 - Node 버전: lint-staged 17은 Node 22.22.1 이상이 필요하다. 팀원 버전이 낮으면 커밋 훅이 깨지므로 `package.json`에 명시하거나 공지
 
   ```json
