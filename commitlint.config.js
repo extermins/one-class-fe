@@ -4,7 +4,7 @@ const commitlintConfig = {
     'type-enum': [
       2,
       'always',
-      ['feat', 'fix', 'style', 'test', 'docs', 'chore', 'refactor'],
+      ['feat', 'fix', 'style', 'test', 'docs', 'chore', 'refactor','setting'],
     ],
     'subject-case': [0],
   },
